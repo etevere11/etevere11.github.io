@@ -10294,3 +10294,40 @@ I changed all "~" for "+" below:*/
 #toggle2:checked+label::before {
   content: "-";
 }
+#toggle3:checked+.expand {
+  height: 300px;
+}
+
+#toggle3:checked+label::before {
+  content: "-";
+}
+#toggle4:checked+.expand {
+  height: 300px;
+}
+
+#toggle4:checked+label::before {
+  content: "-";
+}
+#toggle5:checked+.expand {
+  height: 300px;
+}
+
+#toggle5:checked+label::before {
+  content: "-";
+}
+
+#toggle6:checked+.expand {
+  height: 300px;
+}
+
+#toggle6:checked+label::before {
+  content: "-";
+}
+#toggle7:checked+.expand {
+  height: 300px;
+}
+
+#toggle7:checked+label::before {
+  content: "-";
+}
+
