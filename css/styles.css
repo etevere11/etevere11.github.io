@@ -10221,4 +10221,76 @@ section.resume-section .resume-section-content {
   clear: both;
   display: table;
 }
+body {
+  font-family: "Open Sans", Arial;
+}
 
+main {
+  background: #EEE;
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 13px;
+}
+
+input {
+  display: none;
+  visibility: collapse;
+}
+
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+}
+
+label:hover {
+  //cursor: grabbing;
+  /*doesn't it make more sense to use 'pointer'?*/
+  cursor: pointer;
+  color: #000;/*what's the point of this rule?*/
+}
+
+.expand {
+  height: 0px;
+  overflow: hidden;
+  //color: #FFF;
+  /*this 'color' rule makes your text white.
+  In a white background-color, you can't see
+  the text, because background and text are white*/
+}
+
+section {
+  padding: 0 20px;
+}
+
+/*old: #toggle:checked~.expand {
+I changed all "~" for "+" below:*/
+#toggle:checked+.expand {
+  height: 300px;
+}
+
+#toggle:checked+label::before {
+  content: "-";/*this here adds an "-" before
+  the element. What's the point of this? I think you should get rid of these ::before selectors*/
+}
+
+#toggle2:checked+.expand {
+  height: 300px;
+}
+
+#toggle2:checked+label::before {
+  content: "-";
+}
