@@ -10172,3 +10172,162 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+  font-family: "Open Sans", Arial;
+}
+
+main {
+  background: #EEE;
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 13px;
+}
+
+input {
+  display: none;
+  visibility: collapse;
+}
+
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+}
+
+label:hover {
+  //cursor: grabbing;
+  /*doesn't it make more sense to use 'pointer'?*/
+  cursor: pointer;
+  color: #000;/*what's the point of this rule?*/
+}
+
+.expand {
+  height: 0px;
+  overflow: hidden;
+  //color: #FFF;
+  /*this 'color' rule makes your text white.
+  In a white background-color, you can't see
+  the text, because background and text are white*/
+}
+
+section {
+  padding: 0 20px;
+}
+
+/*old: #toggle:checked~.expand {
+I changed all "~" for "+" below:*/
+#toggle:checked+.expand {
+  height: 300px;
+}
+
+#toggle:checked+label::before {
+  content: "-";/*this here adds an "-" before
+  the element. What's the point of this? I think you should get rid of these ::before selectors*/
+}
+
+#toggle2:checked+.expand {
+  height: 300px;
+}
+
+#toggle2:checked+label::before {
+  content: "-";
+}
+#toggle3:checked+.expand {
+  height: 300px;
+}
+
+#toggle3:checked+label::before {
+  content: "-";
+}
+#toggle4:checked+.expand {
+  height: 300px;
+}
+
+#toggle4:checked+label::before {
+  content: "-";
+}
+#toggle5:checked+.expand {
+  height: 300px;
+}
+
+#toggle5:checked+label::before {
+  content: "-";
+}
+
+#toggle6:checked+.expand {
+  height: 300px;
+}
+
+#toggle6:checked+label::before {
+  content: "-";
+}
+#toggle7:checked+.expand {
+  height: 300px;
+}
+
+#toggle7:checked+label::before {
+  content: "-";
+}
+
