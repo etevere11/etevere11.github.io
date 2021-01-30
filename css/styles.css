@@ -10225,26 +10225,6 @@ body {
   font-family: "Open Sans", Arial;
 }
 
-main {
-  background: #EEE;
-  width: 300px;
-  margin: 20px auto;
-  padding: 10px 0;
-}
-
-h2 {
-  text-align: center;
-}
-
-h3 {
-  text-align: center;
-}
-
-p {
-  text-align: center;
-  font-size: 13px;
-}
-
 input {
   display: none;
   visibility: collapse;
