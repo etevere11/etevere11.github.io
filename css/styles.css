@@ -10225,6 +10225,11 @@ body {
   font-family: "Open Sans", Arial;
 }
 
+input {
+  display: none;
+  visibility: collapse;
+}
+
 main {
   background: #EEE;
   width: 300px;
@@ -10243,11 +10248,6 @@ h3 {
 p {
   text-align: center;
   font-size: 13px;
-}
-
-input {
-  display: none;
-  visibility: collapse;
 }
 
 label {
