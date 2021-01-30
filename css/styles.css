@@ -10230,6 +10230,26 @@ input {
   visibility: collapse;
 }
 
+main {
+  background: #EEE;
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 13px;
+}
+
 label {
   display: block;
   padding: 0.5em;
