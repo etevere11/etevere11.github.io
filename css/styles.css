@@ -10268,7 +10268,7 @@ section {
 /*old: #toggle:checked~.expand {
 I changed all "~" for "+" below:*/
 #toggle:checked+.expand {
-  height: 300px;
+  height: 1000px;
 }
 
 #toggle:checked+label::before {
@@ -10277,28 +10277,28 @@ I changed all "~" for "+" below:*/
 }
 
 #toggle2:checked+.expand {
-  height: 300px;
+  height: 1000px;
 }
 
 #toggle2:checked+label::before {
   content: "-";
 }
 #toggle3:checked+.expand {
-  height: 300px;
+  height: 1000px;
 }
 
 #toggle3:checked+label::before {
   content: "-";
 }
 #toggle4:checked+.expand {
-  height: 300px;
+  height: 1000px;
 }
 
 #toggle4:checked+label::before {
   content: "-";
 }
 #toggle5:checked+.expand {
-  height: 300px;
+  height: 1000px;
 }
 
 #toggle5:checked+label::before {
@@ -10306,14 +10306,14 @@ I changed all "~" for "+" below:*/
 }
 
 #toggle6:checked+.expand {
-  height: 300px;
+  height: 1000px;
 }
 
 #toggle6:checked+label::before {
   content: "-";
 }
 #toggle7:checked+.expand {
-  height: 300px;
+  height: 1000px;
 }
 
 #toggle7:checked+label::before {
