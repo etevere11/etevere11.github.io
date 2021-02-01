@@ -219,14 +219,14 @@
                                 <h3>DetectaTrip: Early Detection of Unexpected Falls</h3>
                                 <p>Machine Learning: Deep Learning Project</p>
                                 <a href="assets/docs/DL_FinalReport__1_.pdf">Project Report</a> 
-                                <!--<ul class="fa-ul mb-0">
+                                <ul class="fa-ul mb-0">
                                     <li>
                                     <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                                     <a href="assets/docs/best_project_award_DL.pdf">Intuitive Surgical Best Project Award - 1 of 2 awards given to top project out of the 20+ projects presented on deep learning solutions</a>
                                     </li>
-                                </ul> -->
-                                <p>Our work aims to localize and detect onset of falls 
-                                    from the video. We expand on previous work using
+                                </ul>
+                                <p>Our work aims to localize and detect onset of realistic falls 
+                                    from video. We expanded on previous work in the research sphere using
                                     contrived datasets to detect falls in highly variable
                                     video. Detection of falls can support increased response times to prevent injury in elderly populations,
                                     individuals who suffer from seizures, those with limited mobility, and patients in the hospital.</p>
@@ -243,7 +243,31 @@
                             <div class="expand">
                               <section>
                                 <h3>OptiTrip: Detecting Falls Using Optical Flow</h3>
-                                <p>Another paragraph</p>
+                                <p>Fall detection is an active area of research that has
+                                    major potential impact. In the US, the aging population
+                                    is constantly growing. Along with this growth, the
+                                    fall death rate is increasing - up 30% from 2007 to
+                                    2016. Every year, over 3 million elderly people are
+                                    treated in emergency departments as a result of fall
+                                    injuries, and one in five falls causes severe injury, such
+                                    as broken bone or head injury. Accurate detection
+                                    of falls is vital to timely intervention. Current state-ofthe-art focuses on video- and sensor-based detection.
+                                    Video based monitoring can provide critical support
+                                    for detection of injury and falls, enabling improved
+                                    response times and mitigating long term effects. We
+                                    focused our project scope in fall detection using video
+                                    due to the ubiquitous video monitoring in hospitals
+                                    and elderly care homes where such applications can be
+                                    most helpful. We aim to use optical flow and human
+                                    pose tracking to localize falls from standard RGB video
+                                    feed. We performed our analysis with videos from
+                                    a standard falls database labeled with fall onset and
+                                    termination, and our own collected data with simulated
+                                    falls. While we specifically mention the impact to older
+                                    populations, accurate fall detection can extend to other
+                                    vulnerable populations including people affected by
+                                    seizures, people with limited mobility, and patients
+                                    recovering in hospital.</p>
                               </section>
                             </div>
                         </div>
@@ -255,7 +279,27 @@
                             <div class="expand">
                               <section>
                                 <h3>Autonomous Rideshare Planner and Controller</h3>
-                                <p>Another paragraph</p>
+                                <div class="subheading mb-5">
+                                    <a href="assets/docs/Nonlinear_Control_Project_Report.pdf">Project Report</a> 
+                                </div>
+                                <p>This project focuses on solving the dynamic ride sharing problem which was defined as the problem in which the following conditions exist: </p>
+                                <ol type="1">
+                                    <li>A random start position is known</li>
+                                    <li>There are four randomly located waypoints that each need to be visited only once and in no
+                                    specified order</li>
+                                    <li>There is one final goal that does not change which is centralized given the positional bounds of
+                                    the problem</li>
+                                    <li>All dynamic constraints are known (including location of obstacles)</li>
+                                    <li> The goal is to minimize the control effort (the smoothness of the ride) and keep the controlled
+                                    vehicle as close to the ideal path along the route</li>
+                                </ol>
+                                <p> Solving the problem with 
+                                    random orientations of stopping position is too complex so the states of each stops are simplified.
+                                    Dijkstra’s algorithm and dynamic programming together provide a valid solution to minimize the distance
+                                    between all the way points. Multiple shooting solves the minimal control effort and linear velocity
+                                    between each stop. A nonlinear controller designed by feedback linearization can track the desired
+                                    trajectory. Combining these three subproblems, we optimize the dynamic ride sharing problem with
+                                    minimum distance and minimum control effort</p>
                               </section>
                             </div>
                         </div>
@@ -269,7 +313,28 @@
                             <div class="expand">
                               <section>
                                 <h3>UR5 Robot Manipulation Using Inverse Kinematics, Resolved Rate, and Gradient Control Methods</h3>
-                                <p>Another paragraph</p>
+                                <div class="subheading mb-5">
+                                    <a href="assets/docs/rdk_final_project.pdf">Project Report</a> 
+                                </div>
+                                <p>For the final project, we had the goal of implementing a movement sequence on the ur5 robot using an inverse kinematics based, differential kinematics based, and gradientdescent based control method. The movement sequenecs followed this general format: </p>
+                                <ol type="1">
+                                    <li>Prompt user to move robot to some user chosen home configuration - it is recommended thatthis be half-way between the two desired positions</li>
+                                    <li>User presses mouse buttons to record the home position joint angles</li>
+                                    <li>Prompt user to move robot to specified start configuration</li>
+                                    <li>User presses mouse buttons to record the start position joint angles</li>
+                                    <li> Prompt user to move robot to specified target configuration</li>
+                                    <li>User presses mouse buttons to record the target position joint angles</li>
+                                    <li>Move ur5 robot to home configuration</li>
+                                    <li>Compute an appropriate gesture move based on which desired configuration is input as the start position</li>
+                                    <li>Move robot to gesture position to indicate which cup the robot will be moving towards first</li>
+                                    <li>Prompt user for the control scheme requested</li>
+                                    <li>User enters value corresponding to desired control scheme</li>
+                                    <li>Control scheme specified is executed with user input home, start, and target configurations</li>            
+                                </ol>
+                        
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/HLhyPWLH9u4?start=4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/HLhyPWLH9u4?start=4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4CY9j3Mk1yk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                               </section>
                             </div>
                         </div>
@@ -281,7 +346,16 @@
                             <div class="expand">
                               <section>
                                 <h3>Design of Custom Low-Cost 3D-Printed Parallel Gripper with Force Control</h3>
-                                <p>Another paragraph</p>
+                                <div class="subheading mb-5">
+                                    <a href="assets/docs/Erica Tevere EECS 499 Final Report.pdf">Project Report</a> 
+                                </div>
+                                <p>This project focused on producing a gripper with comparable grasping reach to the Robotiq 3-finger gripper but that was more compact in space for more possible 
+                                    variety in grasp approach for deformable objects. Several iterative prototypes were designed, manufactured, and tested. One of the prototypes were selected for 
+                                    further developmenet. The hardware was iterated on and eventually moved over to being majority 3D printed. The low cost of the non-3D printed components and ease 
+                                    of replacement of 3D printed components made the manipulator ideal for testing riskier planning algorithms where collision had more potential to occur or with objects 
+                                    where the gripper needed to be closer to the surface the object was on. Testing of the manipulator allowed to determine and prove a reliable gripper lifecycle for the
+                                  expected test demands of the lab. Force sensing using basic presure sensors at the fingertips was added to the manipulator to further mimic the capabilities of the
+                                  off-the-shelf manipulator and make the gripper more robust to grasping a variety of objects.</p>
                               </section>
                             </div>
                         </div>
@@ -294,7 +368,23 @@
                             <div class="expand">
                               <section>
                                 <h3>Senior Design Project: Reduced Turning Radius Solution for an Off-Road Vehicle</h3>
-                                <p>Another paragraph</p>
+                                <div class="subheading mb-5">
+                                    <a href="assets/docs/Final Design Report.pdf">Project Report</a> 
+                                </div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DQ1x-VsZDI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <p>This project focused on finding a unique approach to the desire of reducing an off-road vehicles turning radius while meeting the following demands:</p>
+                                <ol>
+                                    <li>has no significant affect on the vehicle’s rear-suspension geometry</li>
+                                    <li>has low rotational inertia</li>
+                                    <li>does not distract the driver from steering, accelerating, and braking</li>
+                                    <li>does not result in a loss of rear wheel traction</li>
+                                    <li>is durable enough to last extreme driving conditions (including weather) and over 50 hours of continous driving</li>
+                                    <li>does not exceed a budget of $1,000</li>
+                                </ol>
+                                <p>To meet these demands and also have a significant impact in reducing the low-speed turning radius of the vehicle, our team selected
+                                to design and prototype a design which added freewheel clutched to the single output shaft to allow for reduce frictional torque on the vehicle when
+                                turning at low speed thus resulting in an increased turn radius.</p>
                               </section>
                             </div>
                         </div>
