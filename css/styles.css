@@ -10319,4 +10319,13 @@ I changed all "~" for "+" below:*/
 #toggle7:checked+label::before {
   content: "-";
 }
-
+html,body {
+    height:100%;
+}
+.h_iframe iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
