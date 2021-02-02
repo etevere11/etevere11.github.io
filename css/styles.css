@@ -10319,3 +10319,18 @@ I changed all "~" for "+" below:*/
 #toggle7:checked+label::before {
   content: "-";
 }
+
+#toggle8:checked+.expand {
+  height: 2000px;
+}
+
+#toggle8:checked+label::before {
+  content: "-";
+}
+#toggle9:checked+.expand {
+  height: 2000px;
+}
+
+#toggle9:checked+label::before {
+  content: "-";
+}
